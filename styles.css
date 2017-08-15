@@ -5,3 +5,47 @@ h1 {color: green;}
 .watch {
   width: 40%;
 }
+
+tr {
+  padding: 5px 5px 5px 5px;
+}
+
+.header {
+  background-color: #c4df9b;
+  color: white;
+}
+
+#day, #time, #date {
+  margin-bottom: 0;
+}
+
+.timeDiv {
+  padding-left: 0;
+}
+
+.dateTime {
+  vertical-align: middle;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 13px;
+}
+
+.title {
+  font-size:  32px;
+  vertical-align: middle;
+  padding: 0 0 0 250px;
+  margin: 0 0 0 0;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+  height: 100%;
+  font-family: Times;
+  font-weight: bold;
+  background-color: #c4df9b;
+  color: white;
+}
