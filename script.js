@@ -1,7 +1,12 @@
 var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth();
-var yyyy = today.getFullYear();
+var date = today.getDate();
+var year = today.getFullYear();
 
-today = mm + '/' + dd + '/' + yyyy;
+var monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+var month = monthNames[today.getMonth()];
+
+today = month + ' ' + date + ', ' + year;
 document.getElementById('date').innerHTML = today;
