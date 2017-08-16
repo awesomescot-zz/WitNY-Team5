@@ -26,8 +26,9 @@ document.getElementById('date').innerHTML = today;
 document.getElementById('time').innerHTML = time;
 
 $('.carousel').carousel({
-  interval: 3000;
+  interval: 3000
 })
+
 
 function func() {
   document.getElementById("elderImg").src="images/elders2.png";
