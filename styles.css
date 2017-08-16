@@ -29,6 +29,16 @@ h1 {color: green;}
   border-left: solid;
   border-width: 10px;
   border-color: #e9e9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+  overflow: auto;
+}
+
+a:hover {
+   text-decoration:none;
+   color: #657e3e;
 }
 
 .centerRow {
