@@ -57,6 +57,7 @@
 			width:100px;
       font-size: 25px;
       line-height:24px;
+
     }
     .more-info-div {
       vertical-align: middle;
@@ -64,6 +65,7 @@
       justify-content:center;
       align-content:center;
       flex-direction:column;
+      padding:0px;
     }
 		.bottom-headers {
 			padding-top: 10px;
@@ -120,7 +122,7 @@
           <div class="row">
             <div class="col text-center bottom-headers"><h1>Requests for your help</h1><hr></div>
           </div>
-          <div class="row alert-primary rounded request-row">
+          <div class="row alert-primary rounded request-row first-request">
             <div class="col-3"><img src="images/1606110.jpg" class="img-thumbnail"></div>
             <div class="col-6"><h3>LANGUAGE TUTORING</h3><h4>with Jeon Jungkook</h4></div>
             <div class="col-3 more-info-div"><button type="button" class="btn btn-primary btn-lg more-info" data-toggle="modal" data-target="#exampleModal">MORE<br>INFO</button></div>
@@ -203,8 +205,8 @@
           <br> Date: August 18, 2017<br>Time: 4pm - 5pm<br>Location: Senior Center<br>Message: Hi Morgan, can you help me learn English?  I have a test on Friday.  Thanks!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-success" data-dismiss="modal">Accept</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Decline</button>
+          <button type="button" class="btn btn-success remove-request" data-dismiss="modal">Accept</button>
+          <button type="button" class="btn btn-secondary remove-request" data-dismiss="modal">Decline</button>
         </div>
       </div>
     </div>
