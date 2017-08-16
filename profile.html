@@ -29,14 +29,8 @@
 		.coupon-img {
 			margin: 9px 8px 17px 45px;
 		}
-    .requests-table {background-color:#e9e9e9;
-      padding: 0px;
-      border-width: 10px;
-      border-color: white;
-      border-style: solid;
-      border-radius: 5%;
-    }
-    .reviews-table {background-color:#e9e9e9;
+    .grey-box {
+			background-color:#e9e9e9;
       padding: 0px;
       border-width: 10px;
       border-color: white;
@@ -113,17 +107,18 @@
       </div>
       <div class="col-3">
         <div class="coupon-div">
-          <span class="text-danger"><img class="coupon-img" src="images/witny-coupon.png"> 5</span>
+          <span class="text-success"><img class="coupon-img" src="images/newcoupon.png"> 5</span>
         </div>
         <div class="request">
-          <button type="button" class="btn btn-outline-dark btn-lg"><h3>Request Help</h3></button>
+
+          <button type="button" class="btn btn-outline-dark btn-lg" data-toggle="modal" data-target=".request-modal-lg"><h3>Request Help</h3></button>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-7 requests-table">
+      <div class="col-6 requests-table grey-box">
           <div class="row">
-            <div class="col text-center bottom-headers"><h1>Requests</h1><hr></div>
+            <div class="col text-center bottom-headers"><h1>Requests for your help</h1><hr></div>
           </div>
           <div class="row alert-primary rounded request-row">
             <div class="col-3"><img src="images/1606110.jpg" class="img-thumbnail"></div>
@@ -141,24 +136,56 @@
             <div class="col-3 more-info-div"><button type="button" class="btn btn-warning btn-lg more-info">MORE<br>INFO</button></div>
           </div>
       </div>
-      <div class="col-5 reviews-table">
-        <div class="row">
-          <div class="col text-center bottom-headers"><h1>Recent Reviews</h1><hr></div>
-        </div>
-        <div class="row review-row">
-          <div class="col rounded alert-success">
-            <h5>Elizabeth Linares - Tutoring</h5>
-            <div class="text-center stars"><img src="images/starcolor.png" class="star-img"><img src="images/starcolor.png" class="star-img"><img src="images/starcolor.png" class="star-img"><img src="images/starcolor.png" class="star-img"><img src="images/starcolor.png" class="star-img"></div>
-            <p> I got some great knowledge from Mr. Freeman.  He really helped me get ready for my math text.  And I passed with flying colors! </p>
+      <div class="col-6">
+				<div class="reviews-table grey-box">
+          <div class="row">
+            <div class="col text-center bottom-headers"><h1>Recent Reviews for you</h1><hr></div>
           </div>
-        </div>
-        <div class="row review-row">
-          <div class="col rounded alert-success">
-            <h5>Angela Munoz - Acting</h5>
-            <div class="text-center stars"><img src="images/starcolor.png" class="star-img"><img src="images/starcolor.png" class="star-img"><img src="images/starcolor.png" class="star-img"><img src="images/starcolor.png" class="star-img"><img src="images/stargrey.png" class="star-img"></div>
-            <p>At first acting seemed very difficult to grasp, but after a few sessions with Mr. Freeman I was able to cry and laugh within five minutes.  I love him and will request him in the future.</p>
+          <div class="row review-row">
+            <div class="col rounded alert-success">
+              <h5>Elizabeth Linares - Tutoring</h5>
+              <div class="text-center stars"><img src="images/starcolor.png" class="star-img"><img src="images/starcolor.png" class="star-img"><img src="images/starcolor.png" class="star-img"><img src="images/starcolor.png" class="star-img"><img src="images/starcolor.png" class="star-img"></div>
+              <p> I got some great knowledge from Mr. Freeman.  He really helped me get ready for my math text.  And I passed with flying colors! </p>
+            </div>
           </div>
-        </div>
+          <div class="row review-row">
+            <div class="col rounded alert-success">
+              <h5>Angela Munoz - Acting</h5>
+              <div class="text-center stars"><img src="images/starcolor.png" class="star-img"><img src="images/starcolor.png" class="star-img"><img src="images/starcolor.png" class="star-img"><img src="images/starcolor.png" class="star-img"><img src="images/stargrey.png" class="star-img"></div>
+              <p>At first acting seemed very difficult to grasp, but after a few sessions with Mr. Freeman I was able to cry and laugh within five minutes.  I love him and will request him in the future.</p>
+            </div>
+          </div>
+				</div>
+				<div class="your-requests grey-box">
+          <div class="row">
+            <div class="col text-center bottom-headers"><h1>Your Requests</h1><hr></div>
+          </div>
+          <div class="row review-row">
+            <div class="col rounded alert-success">
+              <h5>Help with Technology - Accepted</h5>
+              <p> 
+								<strong>User:</strong> Ruth Ake<br> 
+								<strong>Date:</strong> 9/3/2017<br>
+								<strong>Time:</strong> 4pm - 5pm<br>
+								<strong>Your message:</strong> Hi. Can you help me with my computer?
+							</p>
+							<p>
+              	<strong>Their response:</strong> Ya, I can help you out.  How about Thursday afternoon?
+							</p>
+            </div>
+					</div>
+          <div class="row review-row">
+            <div class="col rounded alert-danger">
+              <h5>Help with Groceries - Pending</h5>
+              <p> 
+								<strong>User:</strong> Karen Guzman<br> 
+								<strong>Date:</strong> 9/3/2017<br>
+								<strong>Time:</strong> 4pm - 6pm<br>
+								<strong>Your message:</strong> Hi. Can you help me get things for dinner?
+							</p>
+            </div>
+					</div>
+				</div>
       </div>
     </div>
   </div>
@@ -175,6 +202,53 @@
         <div class="modal-body"><h3 class="text-center">Jeon Jungkook has requested you for Language Tutoring.</h3> 
           <br> Date: August 18, 2017<br>Time: 4pm - 5pm<br>Location: Senior Center<br>Message: Hi Morgan, can you help me learn English?  I have a test on Friday.  Thanks!
         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Accept</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Decline</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade request-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Language Tutoring</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+				<div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1"></label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Select the skill you need:</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Getting Groceries</option>
+                <option>Using Technology</option>
+                <option>Speaking a language</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">Example multiple select</label>
+              <select multiple class="form-control" id="exampleFormControlSelect2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </form>
+				</div>
         <div class="modal-footer">
           <button type="button" class="btn btn-success" data-dismiss="modal">Accept</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Decline</button>
