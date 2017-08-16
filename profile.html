@@ -74,6 +74,15 @@
 		.bottom-headers {
 			padding-top: 10px;
 		}
+    
+    .request {
+      height:100%;
+      vertical-align: middle;
+      display: flex;
+      justify-content:center;
+      align-content:center;
+      flex-direction:column;
+    }
 
   </style>
   <!--[if lt IE 9]>
@@ -90,19 +99,25 @@
       <div class="col-6">
         <h1>Morgan Freeman</h1>
         <h2>Level 2</h2>
+        <span>Skills: </span>
         <div class="badge badge-primary">
           TUTORING
         </div>
         <div class="badge badge-warning">
-          BABYSITTING
-        </div>
-        <div class="badge badge-info">
           ACTING
         </div>
-        <p> I am an American actor.  As you grow in this business, you learn how to do more with less.  Give me something interesting to play and I'm happy. I knew at an early age I wanted to act. Acting was always easy for me. I don't believe in predestination, but I do believe that once you get where ever it is you are going, that is where you were going to be. </p> 
+        <div class="badge badge-info">
+          BABYSITTING
+        </div>
+        <p style="margin-top:25px;"> I am an American actor.  As you grow in this business, you learn how to do more with less.  Give me something interesting to play and I'm happy. I knew at an early age I wanted to act. Acting was always easy for me. I don't believe in predestination, but I do believe that once you get where ever it is you are going, that is where you were going to be. </p> 
       </div>
-      <div class="col-3 coupon-div">
-        <span class="text-danger"><img class="coupon-img" src="images/witny-coupon.png"> 5</span>
+      <div class="col-3">
+        <div class="coupon-div">
+          <span class="text-danger"><img class="coupon-img" src="images/witny-coupon.png"> 5</span>
+        </div>
+        <div class="request">
+          <button type="button" class="btn btn-outline-dark btn-lg"><h3>Request Help</h3></button>
+        </div>
       </div>
     </div>
     <div class="row">
@@ -115,15 +130,15 @@
             <div class="col-6"><h3>LANGUAGE TUTORING</h3><h4>with Jeon Jungkook</h4></div>
             <div class="col-3 more-info-div"><button type="button" class="btn btn-primary btn-lg more-info" data-toggle="modal" data-target="#exampleModal">MORE<br>INFO</button></div>
           </div>
-          <div class="row alert-info rounded request-row">
+          <div class="row alert-warning rounded request-row">
             <div class="col-3"><img src="images/IMG_3842.jpg" class="img-thumbnail"></div>
             <div class="col-6"><h3>ACTING</h3><h4>with Karen Guzman</h4></div>
-            <div class="col-3 more-info-div"><button type="button" class="btn btn-info btn-lg more-info">MORE<br>INFO</button></div>
+            <div class="col-3 more-info-div"><button type="button" class="btn btn-warning btn-lg more-info">MORE<br>INFO</button></div>
           </div>
-          <div class="row alert-info rounded request-row">
+          <div class="row alert-warning rounded request-row">
             <div class="col-3"><img src="images/community1.jpg.jpg" class="img-thumbnail"></div>
             <div class="col-6"><h3>ACTING</h3><h4>with Ruth Ake</h4></div>
-            <div class="col-3 more-info-div"><button type="button" class="btn btn-info btn-lg more-info">MORE<br>INFO</button></div>
+            <div class="col-3 more-info-div"><button type="button" class="btn btn-warning btn-lg more-info">MORE<br>INFO</button></div>
           </div>
       </div>
       <div class="col-5 reviews-table">
