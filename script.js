@@ -24,3 +24,7 @@ today = month + ' ' + date + ', ' + year;
 document.getElementById('day').innerHTML = day;
 document.getElementById('date').innerHTML = today;
 document.getElementById('time').innerHTML = time;
+
+$('.carousel').carousel({
+  interval: 2000
+})

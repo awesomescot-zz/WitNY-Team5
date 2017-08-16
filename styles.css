@@ -1,9 +1,28 @@
 
-body {background-color: white;}
+body {background-color: #e9e9e9;}
 h1 {color: green;}
 
 .watch {
   width: 40%;
+}
+
+.scanner {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.bottomColumns1 {
+  background-color: #d1ecf1;
+  margin-left: 40px;
+}
+
+.bottomColumns2 {
+  background-color: #d1ecf1;
+  float: right;
+}
+
+.centerRow {
+  margin-top: 50px;
 }
 
 tr {
@@ -11,8 +30,14 @@ tr {
 }
 
 .header {
-  background-color: #c4df9b;
+  background-color: #009999;
   color: white;
+}
+
+.bottom {
+  margin: 50px 0 50px 0;
+  padding: 20px;
+  background-color: #d6d8d9;
 }
 
 #day, #time, #date {
@@ -46,6 +71,6 @@ tr {
   height: 100%;
   font-family: Times;
   font-weight: bold;
-  background-color: #c4df9b;
+  background-color: #009999;
   color: white;
 }
