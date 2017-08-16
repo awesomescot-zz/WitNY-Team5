@@ -1,3 +1,5 @@
 $( document ).ready(function() {
-  console.log( "ready!" );
+  $(".remove-request").click(function() {
+    $(".first-request").hide();    
+  });
 });
