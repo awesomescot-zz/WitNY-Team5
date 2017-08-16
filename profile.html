@@ -8,8 +8,13 @@
   <meta name="description" content="WitNY Team 5">
   <style>
     table {padding:5px;}
-    .rounded {border-radius:5px;}
     tr {margin:5px;}
+    .requests-table {background-color:#e9e9e9;
+      margin: 5px;}
+    .reviews-table {background-color:#e9e9e9;
+      margin: 5px;}
+    .request-row {margin:4px;}
+    .review-row {margin:4px;}
   </style>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -23,7 +28,7 @@
         <img src="images/Morgan-Freeman.jpg" class="img-thumbnail">
       </div>
       <div class="col-6">
-        <h1>Name Namename</h1>
+        <h1>Morgan Freeman</h1>
         <h2>Level 2</h2>
         <div class="badge badge-primary">
           TUTORING
@@ -31,58 +36,43 @@
         <div class="badge badge-warning">
           BABYSITTING
         </div>
+        <p> Morgan Freeman is an American actor. </p> 
       </div>
       <div class="col-3">
         A badge with points.
       </div>
     </div>
     <div class="row">
-      <div class="col-8">
-        <table class="table table-dark rounded">
-          <thead class="thead-default">
-            <tr>
-              <th colspan="3" class="text-center">Requests</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="table-primary">
-              <th scope="row">profile image</th>
-              <th><h1>LANGUAGE TUTORING</h1><h3>with UserName</h3></th>
-              <th>more info</th>
-            </tr>
-            <tr>
-              <th scope="row">profile image</th>
-              <th><h1>LANGUAGE TUTORING</h1><h3>with UserName</h3></th>
-              <th>more info</th>
-            </tr>
-            <tr>
-              <th scope="row">profile image</th>
-              <th><h1>LANGUAGE TUTORING</h1><h3>with UserName</h3></th>
-              <th>more info</th>
-            </tr>
-          </tbody>
-        </table>
+      <div class="col-7 requests-table rounded">
+          <div class="row">
+            <div class="col text-center"><h1>Requests</h1><hr></div>
+          </div>
+          <div class="row alert-primary rounded request-row">
+            <div class="col-3"><img src="images/1606110.jpg" class="img-thumbnail"></div>
+            <div class="col-6"><h1>LANGUAGE TUTORING</h1><h3>with UserName</h3></div>
+            <div class="col-3">more info</div>
+          </div>
+          <div class="row alert-danger rounded request-row">
+            <div class="col-3"><img src="images/IMG_3842.jpg" class="img-thumbnail"></div>
+            <div class="col-6"><h1>LANGUAGE TUTORING</h1><h3>with UserName</h3></div>
+            <div class="col-3">more info</div>
+          </div>
+          <div class="row alert-danger rounded request-row">
+            <div class="col-3"><img src="images/community1.jpg.jpg" class="img-thumbnail"></div>
+            <div class="col-6"><h1>LANGUAGE TUTORING</h1><h3>with UserName</h3></div>
+            <div class="col-3">more info</div>
+          </div>
       </div>
-      <div class="col-4">
-        <table class="table rounded">
-          <thead class="thead-default">
-            <tr>
-              <th class="text-center">Recent Reviews</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row"><h3>profile image</h3>
-                <p> Some review text </p>
-              </th>
-            </tr>
-            <tr>
-              <th scope="row"><h3>profile image</h3>
-                <p> Some review text </p>
-              </th>
-            </tr>
-          </tbody>
-        </table>
+      <div class="col-4 reviews-table rounded">
+        <div class="row">
+          <div class="col text-center"><h1>Recent Reviews</h1><hr></div>
+        </div>
+        <div class="row review-row">
+          <div class="col rounded alert-success">
+            <h3>Username - Task</h3>
+            <p> They did a great job of it! </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
