@@ -13,11 +13,13 @@ h1 {color: green;}
 
 .bottomColumns1 {
   background-color: #f1f1f1;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
   border-right: solid;
   border-width: 10px;
   border-color: #e9e9e9;
+  padding-top: 15px;
+  font-size: 24px;
 }
 
 .bottomColumns2 {
@@ -47,13 +49,13 @@ tr {
 	width: 400px;
 	height: 400px;
   background-color: #c9df9b;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  justify-content:center;
-  align-content:center;
-  flex-direction:column;
-  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+  overflow: auto;
 }
 
 .innerCircle {
@@ -65,13 +67,12 @@ tr {
   border-width: 2px;
   border-style: solid;
   color: white;
-  margin-left: 20px;
   display: flex;
   justify-content:center;
   align-content:center;
   flex-direction:column;
   vertical-align: middle;
-  font-size: 32px;
+  font-size: 50px;
   font-weight: bold;
 }
 
@@ -87,7 +88,7 @@ tr {
 }
 
 .timeDiv {
-  padding-left: 0;
+
 }
 
 .myCarouselDiv {
@@ -95,33 +96,62 @@ tr {
 }
 
 .dateTime {
-  vertical-align: middle;
-  display: flex;
-  justify-content:center;
-  align-content:center;
-  flex-direction:column;
-  height: 100%;
-  padding-top: 10px;
-  padding-bottom: 13px;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-img {
+.topHeadText {
+  padding-left: 85px;
+}
+
+.myCarousel > img {
   height: 100%;
   width: 100%;
 }
 
+ .logoImage > img {
+   height: 100%;
+   width: 80%;
+}
+
+ .logoImage {
+    max-height: 100px;
+    padding-top: 2px;
+}
+
+.watchImg
+  {
+      float:left;
+      margin: 0 20px 0 20px;
+  }
+
+.descrip
+  {
+      border-radius: 50%;
+      width: 330px;
+      height: 330px;
+      background-color: #c9df9b;
+      display: flex;
+  }
+
+.descrip > img {
+  margin-left: 45px;
+}
+
 .title {
-  font-size:  48px;
+  font-size:  32px;
+  font-family: Times;
+  font-weight: bold;
+  color: white;
   vertical-align: middle;
-  padding: 0 0 0 250px;
+  padding: 25px 0 0 0;
   margin: 0 0 0 0;
   display: flex;
   justify-content:center;
   align-content:center;
   flex-direction:column;
   height: 100%;
-  font-family: Times;
-  font-weight: bold;
   background-color: #c9df9b;
-  color: white;
+  text-shadow: 1px 2px #a6a6a6;
 }
