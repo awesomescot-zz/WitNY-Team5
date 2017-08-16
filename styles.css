@@ -12,17 +12,25 @@ h1 {color: green;}
 }
 
 .bottomColumns1 {
-  background-color: #d1ecf1;
-  margin-left: 40px;
+  background-color: #f1f1f1;
+  padding-left: 0;
+  padding-right: 0;
+  border-right: solid;
+  border-width: 10px;
+  border-color: #e9e9e9;
 }
 
 .bottomColumns2 {
-  background-color: #d1ecf1;
-  float: right;
+  background-color: #f1f1f1;
+  padding-left: 0;
+  padding-right: 0;
+  border-left: solid;
+  border-width: 10px;
+  border-color: #e9e9e9;
 }
 
 .centerRow {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 tr {
@@ -30,22 +38,60 @@ tr {
 }
 
 .header {
-  background-color: #009999;
+  background-color: #c9df9b;
   color: white;
 }
 
+.circle {
+  border-radius: 50%;
+	width: 400px;
+	height: 400px;
+  background-color: #c9df9b;
+  margin-left: 130px;
+  margin-right: 130px;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+  vertical-align: middle;
+}
+
+.innerCircle {
+  border-radius: 50%;
+	width: 360px;
+	height: 360px;
+  background-color: #c9df9b;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  color: white;
+  margin-left: 20px;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+  vertical-align: middle;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+
 .bottom {
-  margin: 50px 0 50px 0;
-  padding: 20px;
-  background-color: #d6d8d9;
+  margin: 25px 0 50px 0;
+  padding: 0;
 }
 
 #day, #time, #date {
   margin-bottom: 0;
+  color: #657e3e;
 }
 
 .timeDiv {
   padding-left: 0;
+}
+
+.myCarouselDiv {
+  width: 100%;
 }
 
 .dateTime {
@@ -59,8 +105,13 @@ tr {
   padding-bottom: 13px;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+}
+
 .title {
-  font-size:  32px;
+  font-size:  48px;
   vertical-align: middle;
   padding: 0 0 0 250px;
   margin: 0 0 0 0;
@@ -71,6 +122,6 @@ tr {
   height: 100%;
   font-family: Times;
   font-weight: bold;
-  background-color: #009999;
+  background-color: #c9df9b;
   color: white;
 }
